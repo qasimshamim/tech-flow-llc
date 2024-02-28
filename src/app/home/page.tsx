@@ -4,7 +4,7 @@ import { homePartnership, homePartnership2 ,serviceCards} from "@/constants/inde
 const HomePage = () => <><C.Hero
   heading="Architects of Tomorrow's Digital Frontier"
   text="enterprises growth companies startups"
-  url="/contact-us"
+  url="#contact-form"
   btn={'tell us about your project'}
   poster="/banner-1.webp"
   video="/hero.webm" />

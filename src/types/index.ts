@@ -132,3 +132,9 @@ export interface ServiceCards {
 export interface CompanyAbout extends HomePartnership {
     tagline: string
 }
+
+
+export interface Faq {
+    question: string;
+    answer: string;
+}

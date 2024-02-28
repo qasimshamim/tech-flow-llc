@@ -26,7 +26,7 @@ const Form = () => {
     },
   });
 
-  return <section className='py-20'>
+  return <section className='py-20' id='contact-form'>
 
     <div className="container mx-auto px-4 flex flex-wrap items-center">
 

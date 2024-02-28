@@ -26,8 +26,7 @@ const Footer = () => {
 
         <div className='flex items-center justify-between flex-wrap py-10 border-0 border-gray-500 border-t-2 gap-2'>
           <p> &copy; {currentYear} {companyName} all rights reserved.</p>
-          <div className='flex flex-wrap items-center gap-4'>
-            <p className='capitalize'>find us on:</p>
+          <div className='flex flex-wrap items-center gap-4'>   
             <ul className='flex flex-wrap items-center sm:gap-4 gap-3'>
               {
                 socialLinks.length > 0 && socialLinks.map((v, i) => (

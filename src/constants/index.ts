@@ -140,7 +140,7 @@ export const jobsCard: T.JobsCard[] = [
 
 
 export const ourPeople: T.OurPeople = {
-  image: '/ourWork.webp',
+  image: '/ourWork.jpg',
   heading: 'Meet Our Exceptional Team at Tech Flow LLC',
   description: `At Tech Flow LLC, we're powered by a diverse team of over 50 professionals across two global offices. With 150+ successful projects under our belt and a stellar rating of 4.9, we're renowned for our dedication to excellence. Our team brings together expertise from various backgrounds, united by a shared commitment to driving innovation and exceeding client expectations. Behind every success story is a talented individual, and at Tech Flow LLC, our team is the driving force behind our achievements. Join us on our journey of innovation and excellence.`,
   btn: 'learn more',
@@ -165,20 +165,46 @@ export const homePartnership2: T.HomePartnership2 = {
 
 
 export const testimonial: T.Testimonial[] = [
+
   {
-    heading: 'Amazing Service!',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    tagLine: 'Exceptional Quality!',
+    description: 'I was blown away by the exceptional quality of service provided. The team went above and beyond to meet my expectations.',
     Icon: FaQuoteLeft,
-    tagLine: 'John Doe, CEO at XYZ Company',
-    image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-  },
-  {
-    heading: 'Great Experience!',
-    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    heading: 'Emily Smith, Director of Marketing',
+    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+    },
+    
+    {
+      tagLine: 'Outstanding Support!',
+    description: 'The support team was outstanding! They were prompt, knowledgeable, and resolved my issue in no time. Highly recommended!',
     Icon: FaQuoteLeft,
-    tagLine: 'Jane Smith, Founder of ABC Inc.',
+    heading: 'David Johnson, IT Manager',
+    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+    },
+    
+    {
+      tagLine: 'Impressive Results!',
+    description: `I'm thoroughly impressed with the results delivered by this service. It has exceeded my expectations and added tremendous value to our project.`,
+    Icon: FaQuoteLeft,
+    heading: 'Sarah Williams, Project Manager',
+    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+    },
+    
+    {
+      tagLine: 'Unbeatable Performance!',
+    description: 'The performance of this product/service is unbeatable. It has significantly improved our efficiency and productivity.',
+    Icon: FaQuoteLeft,
+  heading: 'Michael Brown, Operations Manager',
     image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-  },
+    },
+    
+    {
+      tagLine: 'Exceptional Experience!',
+    description: 'Working with this team has been an exceptional experience. Their professionalism and dedication are commendable.',
+    Icon: FaQuoteLeft,
+    heading: 'Jessica Miller, HR Director',
+    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+    }
 ];
 
 
@@ -471,3 +497,41 @@ export const companyAbout: T.CompanyAbout[] = [
     tagline: 'project manager'
   },
 ]
+
+
+
+
+export const faqs:T.Faq[] = [
+  {
+    question: "What is custom software development?",
+    answer: "Custom software development is the process of creating software solutions that are tailored to meet the specific needs of a particular business or organization."
+  },
+  {
+    question: "What are the benefits of custom software development?",
+    answer: "Benefits of custom software development include increased efficiency and productivity, improved data security, better alignment with business goals and processes, and the ability to scale and adapt to changing needs."
+  },
+  {
+    question: "What are the steps involved in custom software development?",
+    answer: "Steps involved in custom software development include requirements gathering, design, development, testing, and deployment."
+  },
+  {
+    question: "How long does it take to develop a custom software solution?",
+    answer: "The length of time it takes to develop a custom software solution can vary depending on the size and complexity of the project, but typically ranges from several months to a year."
+  },
+  {
+    question: "What are the different types of custom software development services?",
+    answer: "Types of custom software development services include web development, mobile app development, desktop application development, and custom software integration."
+  },
+  {
+    question: "How much does custom software development cost?",
+    answer: "The cost of custom software development can vary greatly depending on the size and complexity of the project, but typically ranges from several thousand to hundreds of thousands of dollars."
+  },
+  {
+    question: "What is the role of the software development company in custom software development?",
+    answer: "The role of the software development company is to work with the client to understand their needs and requirements, design and develop a custom software solution, and provide ongoing support and maintenance."
+  },
+  {
+    question: "What is the process for choosing a software development company?",
+    answer: "The process for choosing a software development company typically involves researching potential companies, reviewing their portfolio and client references, and evaluating their experience and expertise in custom software development."
+  }
+];

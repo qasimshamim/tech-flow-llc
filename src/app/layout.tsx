@@ -28,6 +28,7 @@ export default function RootLayout({
         {children}
         <Com.SuccessSnippets />
         <Com.Form />
+        <Com.Accordion />
         <Com.Footer />
       </body>
     </html>

@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { usePathname,useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Logo, MobileMenu } from "@/components/index"
 import { navLinks } from '@/constants/index'
@@ -50,8 +50,8 @@ const Header = () => {
           <Logo color={true} />
           <div className="flex items-center lg:order-2">
 
-            <div  className="hidden lg:flex"
-               onClick={() => router.push('/contact-us')} >
+            <div className="hidden lg:flex"
+              onClick={() => router.push('/contact-us')} >
               <Button className="bg-Tblue hover:bg-TDarkBlue hidden sm:block">Contact Us</Button>
             </div>
             <HiOutlineMenuAlt3 color='white' className='font-bold text-4xl cursor-pointer lg:hidden' onClick={() => { setIsOpen(!isOpen) }} />
@@ -67,22 +67,52 @@ const Header = () => {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               {
                 navLinks.length > 0 && navLinks.map((v, i) => (
-                  <li key={i}  onClick={() => router.push(v.link)}> 
-                      <NavigationMenu>
-                        <NavigationMenuList >
-                          <NavigationMenuItem >
-                            <NavigationMenuTrigger className={`${!v.menu && 'before:w-full'} ${pathname === v.link ? 'bg-TDarkBlue' : 'bg-transparent'} hover:bg-transparent hover:text-white  text-white  capitalize `}>{v.title}</NavigationMenuTrigger>
-                            {
-                              v.menu && <NavigationMenuContent >
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                  Documentation
-                                </NavigationMenuLink>
+                  <li key={i} onClick={() => router.push(v.link)}>
+                    <NavigationMenu>
+                      <NavigationMenuList >
+                        <NavigationMenuItem >
+                          <NavigationMenuTrigger className={`${!v.menu && 'before:w-full'} ${pathname === v.link ? 'bg-TDarkBlue' : 'bg-transparent'} hover:bg-transparent hover:text-white  text-white  capitalize `}>{v.title}</NavigationMenuTrigger>
+                          {
+                            v.menu && <NavigationMenuContent >
+                              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <div className="flex items-center justify-center gap-6 bg-red-500 flex-wrap">
+                                  <div className="bg-green-500">
+                                    <h1 className="font-bold text-2xl capitalize">product engineering</h1>
 
-                              </NavigationMenuContent>
-                            }
-                          </NavigationMenuItem>
-                        </NavigationMenuList>
-                      </NavigationMenu> 
+                                    <ul>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                    </ul>
+                                  </div>
+                                  <div className="bg-yellow-500">
+                                    <h1 className="font-bold text-2xl capitalize">product engineering</h1>
+
+                                    <ul>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                      <li>Application Re-Engineering</li>
+                                    </ul>
+                                  </div>
+
+                                </div>
+                              </NavigationMenuLink>
+
+                            </NavigationMenuContent>
+                          }
+                        </NavigationMenuItem>
+                      </NavigationMenuList>
+                    </NavigationMenu>
                   </li>
                 ))
               }

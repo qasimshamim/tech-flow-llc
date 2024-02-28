@@ -5,7 +5,7 @@ const Work = () => <><C.Hero
   text="enterprises growth companies startups"
   url="/contact-us"
   btn={'tell us about your project'}
-  heading="we engineer software  solutions"
+  heading="Unveiling Our Diverse Portfolio of Success Stories"
   poster="/banner-1.webp" />
 
   <C.WorkInfo />

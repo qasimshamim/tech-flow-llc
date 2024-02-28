@@ -5,7 +5,7 @@ const company = () => <><C.Hero
   text="enterprises growth companies startups"
   url="/contact-us"
   btn={'tell us about your project'}
-  heading="we engineer software  solutions"
+  heading="Transforming Ideas into Reality with Tech FlowLLC"
   poster="/banner-1.webp" />
   <C.CompanyPartners />
   <C.CompanyAbout

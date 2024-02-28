@@ -6,7 +6,7 @@ const Services = () => <><C.Hero
   text="enterprises growth companies startups"
   url="/contact-us"
   btn={'tell us about your project'}
-  heading="we engineer software  solutions"
+  heading=" Discover Our Comprehensive Range of Services"
   poster="/banner-1.webp" />
 
   <h1 className='text-xl sm:text-6xl text-TDarkBlue text-center font-bold capitalize pt-20'>what we do</h1>
