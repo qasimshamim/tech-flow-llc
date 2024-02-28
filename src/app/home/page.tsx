@@ -16,14 +16,16 @@ const HomePage = () => <><C.Hero
   <C.OurPeople />
 
 
+  <C.Services bg={true} url="/services" btn="views more"
+    description={serviceCards[0].description} heading={serviceCards[0].heading} services={serviceCards[0].services}
+  />
+
+
   <C.HomePartnership
     heading={homePartnership.heading}
     description={homePartnership.description}
     image={homePartnership.image} />
 
-  <C.Services bg={true} url="/services" btn="views more"
-    description={serviceCards[0].description} heading={serviceCards[0].heading} services={serviceCards[0].services}
-  />
 
 
   <C.Testimonial />

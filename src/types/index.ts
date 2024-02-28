@@ -115,6 +115,7 @@ export interface WorkCards {
 
 export interface TeamCards extends HomePartnership {
     tagline: string;
+    linkedin:string;
 }
 
 export interface Services extends SocialLinks {

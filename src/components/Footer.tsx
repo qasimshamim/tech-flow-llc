@@ -8,12 +8,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="w-full h-fit bg-gradient-to-r sm:from-TDarkBlue from-Tblue via-Tblue sm:via-Tblue to-TLightBlue text-white py-2">
+    <footer className="w-full h-fit bg-gradient-to-r from-TDarkBlue via-Tblue to-TLightBlue text-white py-2">
       <div className="container mx-auto px-4 ">
 
         <div className='flex flex-wrap items-center justify-between pb-8'>
           <div className='w-[20rem] flex flex-col gap-4 pt-2'>
-            <Logo color={true} />
+            <Logo color={false} />
             <p className='w-full font-light text-sm'>{companyName} is a software development and consulting company that builds, designs, and helps companies deliver market-leading experiences.
 
             </p>

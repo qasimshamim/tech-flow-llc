@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image"
+import { FaLinkedinIn } from "react-icons/fa";
 import { teamCards } from "@/constants/index"
 
 const Team = () => <section className="bg-white pb-20">
@@ -22,16 +24,17 @@ const Team = () => <section className="bg-white pb-20">
             alt={v.heading}
           />
         </figure>
-        <div className="p-5">
+        <div className="p-5 h-full lg:w-[90%]">
           <h3 className="text-xl font-bold tracking-tight text-gray-900 capitalize">
             {v.heading}
           </h3>
-          <span className="text-gray-500 capitalize">
+          <span className="text-gray-500 capitalize text-xs">
             {v.tagline}
           </span>
-          <p className="mt-3 mb-4 font-light text-gray-500 capitalize">
+          <p className="mt-3 mb-4 font-light text-gray-500 capitalize text-sm">
             {v.description}
           </p>
+          <FaLinkedinIn onClick={() => window.open(v.linkedin,'_blank')} className="cursor-pointer opacity-70 duration-300 transition-all hover:opacity-100"/>
         </div>
       </div>
       )}

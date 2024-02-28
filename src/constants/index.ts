@@ -7,15 +7,17 @@ import { PiClubFill } from "react-icons/pi";
 import { Textarea } from "@/components/ui/textarea"
 import {
   FaLinkedinIn, FaFacebookF, FaInstagram, FaSearchengin, FaAws, FaSalesforce,
-  FaYoutube, FaArrowRight, FaUser, FaHome
+  FaYoutube, FaArrowRight, FaUser, FaHome,FaShopify,FaRobot
 } from "react-icons/fa";
 import { FaXTwitter, FaBattleNet, FaQuoteLeft, FaLightbulb, FaMobileScreenButton, FaUserGroup, FaServicestack } from "react-icons/fa6";
 import { LuPenTool } from "react-icons/lu";
 import { BsPersonFillGear, BsClipboard2Data } from "react-icons/bs";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import { GiBigGear, GiVrHeadset } from "react-icons/gi";
-import { SiMulesoft, SiBlockchaindotcom, SiInternetcomputer, SiSinglestore } from "react-icons/si";
-
+import { GiBigGear, GiVrHeadset,GiGiftOfKnowledge } from "react-icons/gi";
+import { SiMulesoft, SiBlockchaindotcom, SiInternetcomputer, SiSinglestore ,SiCyberdefenders, SiBugcrowd,SiMixcloud,SiPowerbi    } from "react-icons/si";
+import { CgWebsite } from "react-icons/cg";
+import { GrIntegration } from "react-icons/gr";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
 
 
 
@@ -257,27 +259,31 @@ export const workCards: T.WorkCards[] = [
 export const teamCards: T.TeamCards[] = [
   {
     image: '/team/1.webp',
-    heading: 'qasim',
-    tagline: 'project manage',
-    description: 'muneeb drives the technical strategy of the flowbite platform and brand.'
+    heading: 'Qasim Ali',
+    tagline: 'Founder and CEO',
+    description: 'Meet Qasim Shahmin, the pioneering CEO and Founder of Tech Flow LLC, leading our dynamic team towards a future of technological brilliance.',
+    linkedin:'https://www.linkedin.com/in/qasim-shamim/'
   },
   {
     image: '/team/2.webp',
-    heading: 'muneeb',
-    tagline: 'project manage',
-    description: 'muneeb drives the technical strategy of the flowbite platform and brand.'
+    heading: 'Muneeb ur Rehman',
+    tagline: 'Project Manager',
+    description: 'Introducing Muneeb ur Rehman, our dedicated Project Manager at Tech Flow LLC, orchestrating seamless execution and delivery of cutting-edge tech solutions.',
+    linkedin:'https://www.linkedin.com/in/muneeb-ur-rehman-929647177/'
   },
   {
     image: '/team/3.webp',
-    heading: 'muneeb',
-    tagline: 'project manage',
-    description: 'muneeb drives the technical strategy of the flowbite platform and brand.'
+    heading: 'Ahmed Afzal Khan',
+    tagline: 'Business Development Officer',
+    description: 'Meet Ahmed Afzal Khan, our dynamic Business Development Officer at Tech Flow LLC, driving strategic partnerships and fostering growth opportunities in the ever-evolving tech landscape.',
+    linkedin:'https://www.linkedin.com/in/ahmed-afzal-khan-800077140/'
   },
   {
     image: '/team/4.png',
-    heading: 'muneeb',
-    tagline: 'project manage',
-    description: 'muneeb drives the technical strategy of the flowbite platform and brand.'
+    heading: 'Tahir Hussain',
+    tagline: 'Content Manager',
+    description: 'Meet Tahir Hussain, our visionary Content Manager at Tech Flow LLC, sculpting narratives that breathe life into our technological journey and connect with our audience on a deeper level.',
+    linkedin:'https://www.linkedin.com/in/tahir-hussain-5861b7211/'
   },
 ]
 
@@ -305,6 +311,21 @@ export const serviceCards: T.ServiceCards[] = [
       {
         Icon: FaMobileScreenButton,
         title: 'mobile development',
+        url: '/some'
+      },
+      {
+        Icon: CgWebsite ,
+        title: 'custom software development',
+        url: '/some'
+      },
+      {
+        Icon: SiInternetcomputer,
+        title: 'embedded software development',
+        url: '/some'
+      },
+      {
+        Icon: GrIntegration,
+        title: 'web app development',
         url: '/some'
       },
     ]
@@ -361,6 +382,31 @@ export const serviceCards: T.ServiceCards[] = [
         title: 'aws',
         url: '/some'
       },
+      {
+        Icon: SiCyberdefenders ,
+        title: 'cyber security',
+        url: '/some'
+      },
+      {
+        Icon:  SiBugcrowd ,
+        title: 'bpo',
+        url: '/some'
+      },
+      {
+        Icon:SiMixcloud ,
+        title: 'cloud migration',
+        url: '/some'
+      },
+      {
+        Icon: FaShopify,
+        title: 'shopify',
+        url: '/some'
+      },
+      {
+        Icon: SiPowerbi ,
+        title: 'power bi',
+        url: '/some'
+      },
     ]
   },
   {
@@ -386,6 +432,23 @@ export const serviceCards: T.ServiceCards[] = [
       {
         Icon: GiVrHeadset,
         title: 'ar/vr',
+        url: '/some'
+      },
+
+
+      {
+        Icon: MdOutlineHealthAndSafety,
+        title: 'healthcare',
+        url: '/some'
+      },
+      {
+        Icon: GiGiftOfKnowledge,
+        title: 'e-learning',
+        url: '/some'
+      },
+      {
+        Icon:FaRobot,
+        title: 'robotic process automation',
         url: '/some'
       },
     ]
