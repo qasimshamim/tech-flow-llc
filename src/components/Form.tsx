@@ -1,9 +1,7 @@
-"use client"
-import React from 'react'
+"use client" 
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
-import { formValidation, formInputs, formInfo } from '@/constants/index'
-import { Label } from '@radix-ui/react-label';
+import { formValidation, formInputs, formInfo } from '@/constants/index' 
 import { Button } from './ui/button';
 import { FormValues } from '@/types/index'
 import Image from 'next/image';
@@ -26,7 +24,7 @@ const Form = () => {
     },
   });
 
-  return <section className='py-20' id='contact-form'>
+  return <section className='pb-20' id='contact-form'>
 
     <div className="container mx-auto px-4 flex flex-wrap items-center">
 

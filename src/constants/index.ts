@@ -7,14 +7,14 @@ import { PiClubFill } from "react-icons/pi";
 import { Textarea } from "@/components/ui/textarea"
 import {
   FaLinkedinIn, FaFacebookF, FaInstagram, FaSearchengin, FaAws, FaSalesforce,
-  FaYoutube, FaArrowRight, FaUser, FaHome,FaShopify,FaRobot
+  FaYoutube, FaArrowRight, FaUser, FaHome, FaShopify, FaRobot
 } from "react-icons/fa";
 import { FaXTwitter, FaBattleNet, FaQuoteLeft, FaLightbulb, FaMobileScreenButton, FaUserGroup, FaServicestack } from "react-icons/fa6";
 import { LuPenTool } from "react-icons/lu";
 import { BsPersonFillGear, BsClipboard2Data } from "react-icons/bs";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import { GiBigGear, GiVrHeadset,GiGiftOfKnowledge } from "react-icons/gi";
-import { SiMulesoft, SiBlockchaindotcom, SiInternetcomputer, SiSinglestore ,SiCyberdefenders, SiBugcrowd,SiMixcloud,SiPowerbi    } from "react-icons/si";
+import { GiBigGear, GiVrHeadset, GiGiftOfKnowledge } from "react-icons/gi";
+import { SiMulesoft, SiBlockchaindotcom, SiInternetcomputer, SiSinglestore, SiCyberdefenders, SiBugcrowd, SiMixcloud, SiPowerbi } from "react-icons/si";
 import { CgWebsite } from "react-icons/cg";
 import { GrIntegration } from "react-icons/gr";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
@@ -104,37 +104,37 @@ export const jobsCard: T.JobsCard[] = [
     heading: 'Artificial Intelligence',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/Artificial Intelligence'
+    url: '/careers/artificial-intelligence'
   },
   {
     heading: 'Internet of Things (IoT)',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/Internet of Things (IoT)'
+    url: '/careers/internet-of-things'
   },
   {
     heading: 'Data & Analytics',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/Data & Analytics'
+    url: '/careers/data-analytics'
   },
   {
     heading: 'Blockchain',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/Blockchain'
+    url: '/careers/blockchain'
   },
   {
     heading: 'Application Security Services',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/Application Security Services'
+    url: '/careers/application-security-services'
   },
   {
     heading: 'System Integration',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/System Integration'
+    url: '/careers/system-integration'
   },
 ]
 
@@ -151,7 +151,7 @@ export const ourPeople: T.OurPeople = {
 export const homePartnership: T.HomePartnership = {
   image: '/worker.png',
   heading: 'Our Technology Partnerships',
-  description:`Tech Flow LLC fosters strategic alliances with leading technology providers to elevate our solutions to new heights. These partnerships enable us to access cutting-edge tools, platforms, and resources, empowering our team to deliver innovative solutions that exceed client expectations. By staying closely aligned with industry leaders, we ensure that our offerings are always at the forefront of technological advancements, driving superior results and value for our clients.`
+  description: `Tech Flow LLC fosters strategic alliances with leading technology providers to elevate our solutions to new heights. These partnerships enable us to access cutting-edge tools, platforms, and resources, empowering our team to deliver innovative solutions that exceed client expectations. By staying closely aligned with industry leaders, we ensure that our offerings are always at the forefront of technological advancements, driving superior results and value for our clients.`
 }
 
 
@@ -171,40 +171,40 @@ export const testimonial: T.Testimonial[] = [
     description: 'I was blown away by the exceptional quality of service provided. The team went above and beyond to meet my expectations.',
     Icon: FaQuoteLeft,
     heading: 'Emily Smith, Director of Marketing',
-    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-    },
-    
-    {
-      tagLine: 'Outstanding Support!',
+    image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+  },
+
+  {
+    tagLine: 'Outstanding Support!',
     description: 'The support team was outstanding! They were prompt, knowledgeable, and resolved my issue in no time. Highly recommended!',
     Icon: FaQuoteLeft,
     heading: 'David Johnson, IT Manager',
-    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-    },
-    
-    {
-      tagLine: 'Impressive Results!',
+    image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+  },
+
+  {
+    tagLine: 'Impressive Results!',
     description: `I'm thoroughly impressed with the results delivered by this service. It has exceeded my expectations and added tremendous value to our project.`,
     Icon: FaQuoteLeft,
     heading: 'Sarah Williams, Project Manager',
-    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-    },
-    
-    {
-      tagLine: 'Unbeatable Performance!',
+    image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+  },
+
+  {
+    tagLine: 'Unbeatable Performance!',
     description: 'The performance of this product/service is unbeatable. It has significantly improved our efficiency and productivity.',
     Icon: FaQuoteLeft,
-  heading: 'Michael Brown, Operations Manager',
+    heading: 'Michael Brown, Operations Manager',
     image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-    },
-    
-    {
-      tagLine: 'Exceptional Experience!',
+  },
+
+  {
+    tagLine: 'Exceptional Experience!',
     description: 'Working with this team has been an exceptional experience. Their professionalism and dedication are commendable.',
     Icon: FaQuoteLeft,
     heading: 'Jessica Miller, HR Director',
-    image:  'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
-    }
+    image: 'https://avatars.mds.yandex.net/i?id=f73d2032ea7a3adc6dae74dc073b5bb54f353205-10806524-images-thumbs&n=13',
+  }
 ];
 
 
@@ -288,28 +288,28 @@ export const teamCards: T.TeamCards[] = [
     heading: 'Qasim Ali',
     tagline: 'Founder and CEO',
     description: 'Meet Qasim Shahmin, the pioneering CEO and Founder of Tech Flow LLC, leading our dynamic team towards a future of technological brilliance.',
-    linkedin:'https://www.linkedin.com/in/qasim-shamim/'
+    linkedin: 'https://www.linkedin.com/in/qasim-shamim/'
   },
   {
     image: '/team/2.webp',
     heading: 'Muneeb ur Rehman',
     tagline: 'Project Manager',
     description: 'Introducing Muneeb ur Rehman, our dedicated Project Manager at Tech Flow LLC, orchestrating seamless execution and delivery of cutting-edge tech solutions.',
-    linkedin:'https://www.linkedin.com/in/muneeb-ur-rehman-929647177/'
+    linkedin: 'https://www.linkedin.com/in/muneeb-ur-rehman-929647177/'
   },
   {
     image: '/team/3.webp',
     heading: 'Ahmed Afzal Khan',
     tagline: 'Business Development Officer',
     description: 'Meet Ahmed Afzal Khan, our dynamic Business Development Officer at Tech Flow LLC, driving strategic partnerships and fostering growth opportunities in the ever-evolving tech landscape.',
-    linkedin:'https://www.linkedin.com/in/ahmed-afzal-khan-800077140/'
+    linkedin: 'https://www.linkedin.com/in/ahmed-afzal-khan-800077140/'
   },
   {
     image: '/team/4.png',
     heading: 'Tahir Hussain',
     tagline: 'Content Manager',
     description: 'Meet Tahir Hussain, our visionary Content Manager at Tech Flow LLC, sculpting narratives that breathe life into our technological journey and connect with our audience on a deeper level.',
-    linkedin:'https://www.linkedin.com/in/tahir-hussain-5861b7211/'
+    linkedin: 'https://www.linkedin.com/in/tahir-hussain-5861b7211/'
   },
 ]
 
@@ -340,7 +340,7 @@ export const serviceCards: T.ServiceCards[] = [
         url: '/some'
       },
       {
-        Icon: CgWebsite ,
+        Icon: CgWebsite,
         title: 'custom software development',
         url: '/some'
       },
@@ -409,17 +409,17 @@ export const serviceCards: T.ServiceCards[] = [
         url: '/some'
       },
       {
-        Icon: SiCyberdefenders ,
+        Icon: SiCyberdefenders,
         title: 'cyber security',
         url: '/some'
       },
       {
-        Icon:  SiBugcrowd ,
+        Icon: SiBugcrowd,
         title: 'bpo',
         url: '/some'
       },
       {
-        Icon:SiMixcloud ,
+        Icon: SiMixcloud,
         title: 'cloud migration',
         url: '/some'
       },
@@ -429,7 +429,7 @@ export const serviceCards: T.ServiceCards[] = [
         url: '/some'
       },
       {
-        Icon: SiPowerbi ,
+        Icon: SiPowerbi,
         title: 'power bi',
         url: '/some'
       },
@@ -473,7 +473,7 @@ export const serviceCards: T.ServiceCards[] = [
         url: '/some'
       },
       {
-        Icon:FaRobot,
+        Icon: FaRobot,
         title: 'robotic process automation',
         url: '/some'
       },
@@ -501,7 +501,7 @@ export const companyAbout: T.CompanyAbout[] = [
 
 
 
-export const faqs:T.Faq[] = [
+export const faqs: T.Faq[] = [
   {
     question: "What is custom software development?",
     answer: "Custom software development is the process of creating software solutions that are tailored to meet the specific needs of a particular business or organization."
@@ -535,3 +535,95 @@ export const faqs:T.Faq[] = [
     answer: "The process for choosing a software development company typically involves researching potential companies, reviewing their portfolio and client references, and evaluating their experience and expertise in custom software development."
   }
 ];
+
+
+
+export const jobFormValidation: T.FormValidation = {
+  fullName: Yup.string()
+    .required("Full name is Required")
+    .min(2, "Full name must be at least 2 characters")
+    .max(50, "Full name cannot exceed 50 characters"),
+  email: Yup.string().required("Email is Required").email("Invalid email address"),
+  phone: Yup.string().required('Phone number is required'),
+};
+
+export const mengaMenu: T.MegaMenu[] = [
+  {
+    heading: 'product engineering',
+    list: [
+      {
+        title: 'Application Re-Engineering ',
+        link: ''
+      },
+      {
+        title: 'Custom Software Development ',
+        link: ''
+      },
+      {
+        title: ' Web App Development ',
+        link: ''
+      },
+      {
+        title: ' Mobile App Development ',
+        link: ''
+      },
+      {
+        title: 'DevOps',
+        link: ''
+      }
+    ]
+  },
+  {
+    heading: 'opitimization',
+    list: [
+      {
+        title: 'Quality Assurance',
+        link: ''
+      }
+    ]
+  },
+  {
+    heading: 'cloud services',
+    list: [
+      {
+        title: 'Cloud Migration',
+        link: ''
+      },
+      {
+        title: 'Cloud Engineering',
+        link: ''
+      }
+    ]
+  },
+  {
+    heading: 'solution',
+    list: [
+      {
+        title: 'Salesforce',
+        link: ''
+      },
+      {
+        title: 'ServiceNow',
+        link: ''
+      },
+      {
+        title: 'Mulesoft ',
+        link: ''
+      },
+      {
+        title: 'AWS ',
+        link: ''
+      },
+      {
+        title: 'Shopify ',
+        link: ''
+      },
+      {
+        title: 'Power BI',
+        link: ''
+      }
+    ]
+  },
+
+]
+ 

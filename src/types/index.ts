@@ -115,7 +115,7 @@ export interface WorkCards {
 
 export interface TeamCards extends HomePartnership {
     tagline: string;
-    linkedin:string;
+    linkedin: string;
 }
 
 export interface Services extends SocialLinks {
@@ -138,3 +138,11 @@ export interface Faq {
     question: string;
     answer: string;
 }
+
+
+
+export interface MegaMenu {
+    heading: string;
+    list: MenuItem[]
+}
+

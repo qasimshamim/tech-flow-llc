@@ -3,7 +3,7 @@ import Link from "next/link"
 import { usePathname, useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Logo, MobileMenu } from "@/components/index"
-import { navLinks } from '@/constants/index'
+import { navLinks, mengaMenu } from '@/constants/index'
 import { useEffect, useState } from "react"
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import {
@@ -74,38 +74,21 @@ const Header = () => {
                           <NavigationMenuTrigger className={`${!v.menu && 'before:w-full'} ${pathname === v.link ? 'bg-TDarkBlue' : 'bg-transparent'} hover:bg-transparent hover:text-white  text-white  capitalize `}>{v.title}</NavigationMenuTrigger>
                           {
                             v.menu && <NavigationMenuContent >
-                              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                <div className="flex items-center justify-center gap-6 bg-red-500 flex-wrap">
-                                  <div className="bg-green-500">
-                                    <h1 className="font-bold text-2xl capitalize">product engineering</h1>
+                              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} flex items-start justify-start w-[90dvw] h-[90dvh]`}>
+                                <div className="w-full h-full flex pt-8 px-3 justify-between gap-5 flex-wrap">
+                                  {
+                                    mengaMenu.length > 0 && mengaMenu.map((v, i) => <div key={i} className="w-[20rem]">
+                                      <h1 className="font-bold text-2xl capitalize mb-4 text-TDarkBlue">{v.heading}</h1>
 
-                                    <ul>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                    </ul>
-                                  </div>
-                                  <div className="bg-yellow-500">
-                                    <h1 className="font-bold text-2xl capitalize">product engineering</h1>
+                                      <ul className="flex flex-col gap-2">
+                                        {v?.list.map((l, index) => <li key={index} className="w-fit h-fit transition-all duration-300 hover:text-Tblue"><Link href={l.link}>{l.title}</Link>
 
-                                    <ul>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                      <li>Application Re-Engineering</li>
-                                    </ul>
-                                  </div>
-
+                                        </li>)}
+                                      </ul>
+                                    </div>)
+                                  }
                                 </div>
+
                               </NavigationMenuLink>
 
                             </NavigationMenuContent>

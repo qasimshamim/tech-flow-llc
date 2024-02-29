@@ -113,4 +113,9 @@ backdrop-filter: blur(15px);
   background: var(--Tblue);
 }
 
- 
+ .menu{ 
+  transform: translateX(-38%);
+  width: 90dvw !important;
+  right: 50%;  
+  height: fit-content;
+ }

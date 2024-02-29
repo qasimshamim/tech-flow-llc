@@ -1,4 +1,3 @@
-import React from 'react'
 import { jobsCard } from '@/constants/index'
 import Link from 'next/link'
 
