@@ -1,4 +1,5 @@
 import { Hero } from '@/components/index'
+import { companyName } from '@/constants'
 
 const ContactUs = () =>   <>
 <Hero text="enterprises growth companies startups" url="/contact-us" btn={'tell us about your project'} heading="Connect with Us Today for Expert Support and Assistance" poster="/banner-1.webp" />
@@ -14,3 +15,8 @@ const ContactUs = () =>   <>
 </>
 
 export default ContactUs
+
+
+export const metadata = {
+  title:`Contact Us | ${companyName}`,
+}

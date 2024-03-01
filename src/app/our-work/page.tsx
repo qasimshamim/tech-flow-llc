@@ -1,4 +1,5 @@
 import * as C from '@/components/index'
+import { companyName } from '@/constants'
 
 
 const Work = () => <><C.Hero
@@ -15,3 +16,8 @@ const Work = () => <><C.Hero
 </>
 
 export default Work
+
+
+export const metadata = {
+  title:`Our Work | ${companyName}`,
+}

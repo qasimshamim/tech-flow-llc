@@ -1,4 +1,5 @@
 import { Hero } from "@/components/index"
+import { companyName } from "@/constants"
 
 
 const PrivacyPolicy = () => <><Hero text="enterprises growth companies startups" url="/contact-us" btn={'tell us about your project'} heading="privacy policy" poster="/banner-1.webp" />  <section className="container mx-auto px-4 pt-20">
@@ -375,3 +376,9 @@ const PrivacyPolicy = () => <><Hero text="enterprises growth companies startups"
 
 
 export default PrivacyPolicy
+
+
+
+export const metadata = {
+    title:`Privacy Policy | ${companyName}`,
+  }

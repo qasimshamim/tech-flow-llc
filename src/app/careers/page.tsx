@@ -1,4 +1,5 @@
 import { Hero, Jobs  } from '@/components/index'
+import { companyName } from '@/constants'
 
 const Careers = () => {
   return (
@@ -14,3 +15,8 @@ const Careers = () => {
 }
 
 export default Careers
+
+
+export const metadata = {
+  title:`Careers | ${companyName}`,
+}

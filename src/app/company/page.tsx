@@ -23,3 +23,7 @@ const company = () => <><C.Hero
 </>
 
 export default company
+
+export const metadata = {
+  title:`Company | ${con.companyName}`,
+}

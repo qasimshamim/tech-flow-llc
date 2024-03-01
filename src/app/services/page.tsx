@@ -1,5 +1,5 @@
 import * as C from '@/components/index'
-import { serviceCards } from '@/constants/index'
+import { companyName, serviceCards } from '@/constants/index'
 
 
 const Services = () => <><C.Hero
@@ -22,3 +22,9 @@ const Services = () => <><C.Hero
 </>
 
 export default Services
+
+
+
+export const metadata = {
+  title:`Services | ${companyName}`,
+}

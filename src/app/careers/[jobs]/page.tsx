@@ -1,6 +1,7 @@
-'use client'
-import * as C from "@/components/index"
+import * as C from "@/components/index" 
+import { companyName } from "@/constants"
 
+ 
 const Jobs = ({ params }:{ params: any }) => {
 
     const title = `applying for ${params.jobs}` 
@@ -19,3 +20,9 @@ const Jobs = ({ params }:{ params: any }) => {
 }
 
 export default Jobs
+
+export const metadata = {
+    title:`Careers | ${companyName}`,
+  }
+
+ 

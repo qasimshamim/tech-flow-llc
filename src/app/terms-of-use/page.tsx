@@ -1,4 +1,5 @@
 import { Hero } from "@/components/index"
+import { companyName } from "@/constants"
 
 
 const TermOfUse = () => <><Hero text="enterprises growth companies startups" url="/contact-us" btn={'tell us about your project'} heading="terms of use" poster="/banner-1.webp" /> <section className="container mx-auto px-4 pt-20">
@@ -145,3 +146,8 @@ const TermOfUse = () => <><Hero text="enterprises growth companies startups" url
 
 
 export default TermOfUse
+
+
+export const metadata = {
+  title:`Terms Of Use | ${companyName}`,
+}

@@ -1,3 +1,4 @@
+import { companyName } from '@/constants'
 import Link from 'next/link' 
 
 const notFound = () => <body className='overflow-hidden w-fit h-screen'>
@@ -187,3 +188,9 @@ const notFound = () => <body className='overflow-hidden w-fit h-screen'>
 
 
 export default notFound
+
+
+
+export const metadata = {
+  title:`Oops Page Not Found | ${companyName}`,
+}
