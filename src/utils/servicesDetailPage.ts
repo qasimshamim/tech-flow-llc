@@ -10,6 +10,7 @@ import * as Tb from "react-icons/tb";
 import * as Md from "react-icons/md";
 import * as Si from "react-icons/si";
 import * as Io from "react-icons/io";
+import * as Bs from "react-icons/bs";
 
 
 export const serviceDetailCard: T.ServiceDetailCard[] = [
@@ -354,5 +355,944 @@ export const serviceDetailCard: T.ServiceDetailCard[] = [
 
     ]
   },
+  {
+    page: 'discovery-workshop',
+    heading: `What Is Discovery Workshop All About?`,
+    description: `Product Discovery workshops are the most efficient way to handle any project. The workshop is the initial interaction between the client and the project team, wherein both parties develop a shared understanding and mutually devise strategies to solve a particular problem. Product Discovery workshop is a key part of the planning phase in the software development lifecycle.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'How We Can Help You?',
+        description: '',
+        data: [
+          {
+            Icon: Fa.FaRegLightbulb,
+            title: `Validate Your Idea`,
+            description: `Helping you understand the pros and cons associated with your idea.`
+          },
+          {
+            Icon: Fa6.FaListCheck,
+            title: `Build concrete Requirements`,
+            description: `Defining key objectives, and deciding on the features you desire in your new software product.`
+          },
+          {
+            Icon: Fa6.FaPeopleGroup,
+            title: `Involve Stakeholders`,
+            description: `Aligning stakeholders and end users from day one to get higher adaptability post deployment.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `How Can We Help You?`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaBox,
+            title: `Visualize your Idea`,
+            description: `Developing rapid prototypes to help you see how your new project will look and behave.`
+          },
+          {
+            Icon: Fa.FaMoneyBill,
+            title: `Save valuable Resources`,
+            description: `Defining cost estimates for desired features up front, so you don't go over budget on your project.`
+          }
+        ]
+      },
 
+    ]
+  },
+  {
+    page: 'product-strategy',
+    heading: `Elevate Your Product Strategy`,
+    description: `90% of tech organizations don't have a solid product strategy. We will help you define a product strategy that acts as a benchmark of product growth.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'What Do We Do?',
+        description: '',
+        data: [
+          {
+            Icon: Gr.GrInherit,
+            title: `Prototyping`,
+            description: `Test market prototypes to refine functionality and identify problems early.`
+          },
+          {
+            Icon: Md.MdDesignServices,
+            title: `Product UX`,
+            description: `Based on user research, our UX/UI experts can help you design your product to maximize its appeal and usability.`
+          },
+          {
+            Icon: Tb.TbDeviceMobileCode,
+            title: `MVP Development`,
+            description: `Our team of solution analysts and product architects can help you turn your vision into a working product.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `How Can We Help You?`,
+        description: ``,
+        data: [
+          {
+            Icon: Tb.TbAdjustmentsCode,
+            title: `Product Testing`,
+            description: `Our Quality Assurance team ensures that the product is ready to hit the market with full functionalities and performance.`
+          },
+          {
+            Icon: Tb.TbToolsOff,
+            title: `Product Support`,
+            description: `Our continuous maintenance and support ensure that your product will always be the most innovative in the marketplace.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'process-consulting',
+    heading: `Simplify, Standardize And Streamline`,
+    description: `We help organizations plan, design, implement and maintain its critical processes in an effective, efficient and consistent way.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Transform Your Ideas To Dynamic Solutions',
+        description: '',
+        data: [
+          {
+            Icon: Bs.BsDatabaseFill,
+            title: `Digital Acceleration`,
+            description: `Digitize your operations to increase efficiency with greater flexibility and cost savings.`
+          },
+          {
+            Icon: Gr.GrCloudlinux,
+            title: `Cloud Computing`,
+            description: `Leverage the security, efficiency, and agility of our AWS and Microsoft Azure expertise.`
+          },
+          {
+            Icon: Tb.TbFileInfinity,
+            title: `DevOps Enablement`,
+            description: `Accelerate project delivery with our development and operational workflow automation strategy.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `How Can We Help You?`,
+        description: ``,
+        data: [
+          {
+            Icon: Tb.TbAdjustmentsCode,
+            title: `Big Data Analytics`,
+            description: `Our end-to-end big data & analytics services enable faster, more informed business decisions.`
+          },
+          {
+            Icon: Tb.TbToolsOff,
+            title: `Infrastructure Upgrade`,
+            description: `Invigorate your network resources by migrating and visualizing them in the cloud.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'poc',
+    heading: `Innovate With Ease, Validate With Proof`,
+    description: `Explore business-enhancing ideas in a risk-free manner using rigorous testing, project forecasts, and an expert road mapping.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Our POC Development Services',
+        description: `As soon as you've outlined your requirements, we'll establish the PoC's scope, timeline, and budget to start POC Development.`,
+        data: [
+          {
+            Icon: Bs.BsDatabaseFill,
+            title: `Research and Idea Validation`,
+            description: `We will help you bring your idea to life with validated research.`
+          },
+          {
+            Icon: Gr.GrCloudlinux,
+            title: `Designing a Prototype`,
+            description: `Transform your vision into a tangible reality through our prototype design and development services.`
+          },
+          {
+            Icon: Tb.TbFileInfinity,
+            title: `Product Development`,
+            description: `From development to launch, we will help you through each stage of SDLC.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Prove Potential, Realize Success`,
+        description: `Reduce the risk of early investment in untested concepts. Our experienced team will help you refine the ideas and procedures to increase the potential for success.`,
+        data: [
+          {
+            Icon: Tb.TbAdjustmentsCode,
+            title: `Test Your Ideas`,
+            description: `We will help you forecast, map out a plan, and evaluate post-Proof of Concept Development to determine the optimal solution with minimal financial risk.`
+          },
+          {
+            Icon: Tb.TbToolsOff,
+            title: `Accelerate Development`,
+            description: `We'll help you find and fix performance bottlenecks in your development process to improve in-house testing. We'll deliver a distributable software package that can be deployed immediately after approval.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'salesforce',
+    heading: `Your #1 Salesforce Development Partner`,
+    description: `From strategizing to implementation, our end-to-end Salesforce development services has got you all covered!`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Salesforce Solutions For Companies Of Any Size',
+        description: ``,
+        data: [
+          {
+            Icon: Io5.IoMan,
+            title: `Implementation Consultation`,
+            description: `Our salesforce consulting empowers scalability, customization, and user-friendly apps.`
+          },
+          {
+            Icon: Fa.FaHandHoldingUsd,
+            title: `Managed Services`,
+            description: `We offer complete CRM virtual admin management, maintenance, with the flexibility to scale up.`
+          },
+          {
+            Icon: Fa.FaSalesforce,
+            title: `Salesforce Integration`,
+            description: `Our CRM integration services help automate marketing, sales, and customer service.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Salesforce Cloud Implementation Services`,
+        description: `Elevate your Salesforce experience with customized solutions.`,
+        data: [
+          {
+            Icon: Tb.TbAdjustmentsCode,
+            title: `Migration Consulting`,
+            description: `We'll help you transfer data from your CRM to salesforce by executing a plan that fits your needs.`
+          },
+          {
+            Icon: Tb.TbToolsOff,
+            title: `App Customization`,
+            description: `Deliver salesforce customization solutions that meet business goals and maximize ROI.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'services-now',
+    heading: `Unleash The Power Of Efficient Workflow`,
+    description: `Modernize business operations to maximize efficiency, and resilience with a single IT platform.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Our Services',
+        description: `Streamline Your Workflows With ServiceNow.`,
+        data: [
+          {
+            Icon: Io5.IoNewspaper,
+            title: `Discovery & Requirements Gathering:`,
+            description: `Understand your current IT processes and identify areas for improvement.`
+          },
+          {
+            Icon: Fa6.FaGear,
+            title: `Configuration & Customization`,
+            description: `Configure and customize to meet your specific requirements.`
+          },
+          {
+            Icon: Bs.BsFillFolderSymlinkFill,
+            title: `Data Migration`,
+            description: `Move data from legacy systems to ServiceNow. Integration: Integrate with other IT systems, such as Active Directory, to provide a seamless user experience.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gi.GiBigGear,
+            title: `Continual Service Improvement`,
+            description: `Continuously improve and optimize the use of ServiceNow after it has been implemented.`
+          },
+          {
+            Icon: Fa6.FaUserGear,
+            title: `Governance, Risk & Compliance (GRC)`,
+            description: `Automate and improve compliance with various regulations and industry standards.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'mulesoft',
+    heading: `Empowering Agile Teams`,
+    description: `Leverage end-to-end automation to deliver customer experiences better and faster.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Unlock The Power Of Integration With MuleSoft',
+        description: ``,
+        data: [
+          {
+            Icon: Si.SiGooglemessages,
+            title: `Consultation`,
+            description: `If you're evaluating MuleSoft, our architects will assess your application landscape and prepare a solution architecture blueprint.`
+          },
+          {
+            Icon: Bs.BsFileCodeFill,
+            title: `App-Delivery`,
+            description: `Our hybrid onsite, onshore, and offshore delivery architecture ensures API reusability, governance, and visibility.`
+          },
+          {
+            Icon: Fa.FaHandPointer,
+            title: `Integration`,
+            description: `We will integrate MuleSoft with your existing systems, such as ERP, CRM, and other cloud-based or legacy systems.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gr.GrSupport,
+            title: `Application Support`,
+            description: `We offer 24/7 support for monitoring integration architecture, applications, and API problems before they impact your business.`
+          },
+          {
+            Icon: Fa6.FaUserGear,
+            title: `Managed Services`,
+            description: `Our scalable managed services can help you achieve business outcomes faster if you want to speed up project delivery.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'aws',
+    heading: `Innovate & Scale Without Limits`,
+    description: `Focus on winning customers and business growth, not on maintaining infrastructure. We will help you scale and innovate with AWS.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Our Services',
+        description: ``,
+        data: [
+          {
+            Icon: Si.SiGooglemessages,
+            title: `Consultation`,
+            description: `Our AWS consultants take a comprehensive view of your company landscape and provide a solution architecture that is completely scoped and budgeted.`
+          },
+          {
+            Icon: Bs.BsFileCodeFill,
+            title: `Implementation`,
+            description: `We have hands-on expertise creating, implementing, and migrating applications on top cloud platforms to help you expand your business.`
+          },
+          {
+            Icon: Fa.FaHandPointer,
+            title: `Integration`,
+            description: `From integrating apps with AWS hosted data sources, to connecting multiple complex enterprise scale solutions, we do it all.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gr.GrSupport,
+            title: `Back-end Development`,
+            description: `Using an AWS-based integrated backend, we help mobile and web app developers in developing and scaling their solutions.`
+          },
+          {
+            Icon: Fa6.FaUserGear,
+            title: `Scaling`,
+            description: `We can help you scale your backend to accommodate increased application traffic to prevent downtime and company operations.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'cyber-security',
+    heading: `Stay Steps Ahead Of Cyber Attacks`,
+    description: `From proactive planning to crisis management, we will help you overcome your most complex cybersecurity issues.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: 'Secure Your Digital Assets',
+        description: ``,
+        data: [
+          {
+            Icon: Si.SiGooglemessages,
+            title: `Penetration Testing`,
+            description: `Simulating cyber attacks on a company's network or web applications to identify vulnerabilities and weaknesses.`
+          },
+          {
+            Icon: Bs.BsFileCodeFill,
+            title: `Vulnerability Management`,
+            description: `Identifying and managing vulnerabilities in a company's network, software, and systems.`
+          },
+          {
+            Icon: Fa.FaHandPointer,
+            title: `Incident Response`,
+            description: `Quickly identifying and responding to cyber security incidents to minimize damage and restore normal operations.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gr.GrSupport,
+            title: `Security Monitoring`,
+            description: `Constantly monitoring a company's network and systems for signs of cyber attacks or intrusions.`
+          },
+          {
+            Icon: Fa6.FaUserGear,
+            title: `Compliance Management`,
+            description: `Ensuring that a company's security practices comply with relevant laws, regulations, and industry standards.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'bpo',
+    heading: `Intelligent Operations, Value-First Outcomes.`,
+    description: `Is your business future-ready? Now is the high-time to make your business operations intelligent.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `BPO Services For High-Growth Companies`,
+        description: ``,
+        data: [
+          {
+            Icon: Si.SiGooglemessages,
+            title: `Customer Service`,
+            description: `We can handle customer inquiries, complaints, and feedback through various channels such as phone, email, and live chat`
+          },
+          {
+            Icon: Bs.BsFileCodeFill,
+            title: `Technical Support`,
+            description: `We provide assistance to customers with technical issues related to products or services offered by the company.`
+          },
+          {
+            Icon: Fa.FaHandPointer,
+            title: `Back-Office Support`,
+            description: `We provide support for non-customer facing business operations such as data entry, data processing.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gr.GrSupport,
+            title: `Software development`,
+            description: `We develop and implement AI and ML models and algorithms to improve processes and automate decision-making.`
+          },
+          {
+            Icon: Fa6.FaUserGear,
+            title: `IT infrastructure management`,
+            description: `We manage and maintain your organization's IT systems, including servers, networks, and other computer systems.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'cloud-migration',
+    heading: `Seamless Transition To Cloud`,
+    description: `Your end-to-end digital transformation is just a few clicks away.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Simplify Your Transition To The Cloud`,
+        description: ``,
+        data: [
+          {
+            Icon: Si.SiGooglemessages,
+            title: `Cloud strategy & change management`,
+            description: `Determine cloud platform and migration strategy. Develop a plan for migrating your existing IT environment to the cloud. From data replication, data synchronization to data archiving, we do it all.`
+          },
+          {
+            Icon: Bs.BsFileCodeFill,
+            title: `Application migration`,
+            description: `Move your applications to the cloud, including both custom-built and off-the-shelf applications. We help companies with application re-architecting, application replatforming, and application re-hosting.`
+          },
+          {
+            Icon: Fa.FaHandPointer,
+            title: `Infrastructure migration`,
+            description: `Move your organization's infrastructure to the cloud, including servers, storage, and networking. This may include virtual machine migration, container migration, and hybrid cloud deployment.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gr.GrSupport,
+            title: `Platform Migration`,
+            description: `Our platform migration services include data migration, testing and validation, application compatibility, and post-migration support.`
+          },
+          {
+            Icon: Fa6.FaUserGear,
+            title: `Cloud optimization and management`,
+            description: `Optimize your organization's cloud for performance, security, and cost, and manage the ongoing operation of the cloud environment. This may include cloud monitoring, cloud automation, and cloud security.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'shopify',
+    heading: `Accelerating Digital Commerce Transformation`,
+    description: `We empower enterprise-grade capabilities and deliver conversion-focused experiences.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `The One-Stop Solution For Your E-Commerce Needs`,
+        description: ``,
+        data: [
+          {
+            Icon: Io5.IoStorefrontSharp,
+            title: `Shopify Store Setup`,
+            description: `Our store setup services help you launch your Shopify website. Get your online storefront up and running in no time!`
+          },
+          {
+            Icon: Gi.GiLargePaintBrush,
+            title: `Themes Customization`,
+            description: `Make your Shopify store stand out with unlimited customization. Our Shopify designers will make your mobile and web store stand apart through exceptional UX.`
+          },
+          {
+            Icon: Fa6.FaGears,
+            title: `Shopify Integration`,
+            description: `Integrate third-party components and platforms with Shopify for a seamless experience. Our Shopify integration services make your ecommerce software versatile.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaMobileAlt,
+            title: `Shopify App Development`,
+            description: `We can develop custom Shopify apps to add new functionality to a store, such as integrating with other platforms or adding new features like subscriptions or recurring payments.`
+          },
+          {
+            Icon: Io5.IoBarcode,
+            title: `Shopify Plus Development`,
+            description: `We help companies build E-Commerce platforms that can handle 10,000 transactions per minute. Our shopify developers consistently satisfy enterprise standards.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'power-bi',
+    heading: `Transform Your Data Into Actionable Insights`,
+    description: `We will help you transform your data into confident decisions by leveraging Power BI's up-to-the-minute analytics and AI capabilities.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Our Power BI Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Io5.IoClipboardOutline,
+            title: `Report Development`,
+            description: `Transforming data into insightful and interactive reports.`
+          },
+          {
+            Icon:Fa.FaChartBar,
+            title: `Dashboard Creation`,
+            description: `Visualizing your data, from insights to actions.`
+          },
+          {
+            Icon: Fa6.FaGears,
+            title: `Data Integration`,
+            description: `Streamlining data from multiple sources into one seamless view.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaMobileAlt,
+            title: `Data Modelling`,
+            description: `Optimizing data for improved analysis and reporting.`
+          },
+          {
+            Icon: Io5.IoBarcode,
+            title: `Data Visualization`,
+            description: `Bringing your data to life with stunning visuals.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'data-science-ai',
+    heading: `Unleash The Power Of Data Democratization`,
+    description: `A steady stream of insights is all that you need for better decision-making.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Build The Foundation Of Your AI Journey`,
+        description: ``,
+        data: [
+          {
+            Icon: Io5.IoClipboardOutline,
+            title: `Data Analytics & Strategy`,
+            description: `Using a data-driven methodology, we will scale your analytics efforts to measurable business outcomes.`
+          },
+          {
+            Icon:Fa.FaChartBar,
+            title: `Data Discovery & Augmentation`,
+            description: `Using third-party data and predictive analytics, we provide you with holistic customer views.`
+          },
+          {
+            Icon: Fa6.FaGears,
+            title: `Data Management`,
+            description: `We assist with governance, monetization, and compliance in addition to data synthesis and analytics.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaMobileAlt,
+            title: `Data Democratization`,
+            description: `We tailor user-friendly tools, enabling teams to embrace data and accelerate the transition to AI.`
+          },
+          {
+            Icon: Io5.IoBarcode,
+            title: `Industrialized Solutions`,
+            description: `We offer turnkey analytics and AI solutions for common issues, in addition to tailored solutions for more specific requirements.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'blockchain',
+    heading: `Become A Part Of Blockchain Revolution`,
+    description: `Join hundreds of passionate entrepreneurs making their mark in Web 3.0 with tkxel.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Benefits Of Our Blockchain Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Io5.IoClipboardOutline,
+            title: `Enhanced Security`,
+            description: `Blockchain prevents fraud and unauthorized activity by establishing immutable, end-to-end encrypted records making it hacking-proof.s`
+          },
+          {
+            Icon:Fa.FaChartBar,
+            title: `Greater Transparency`,
+            description: `All transactions are time-stamped and irrefutable. Members can view a transaction's whole history, preventing fraud.`
+          },
+          {
+            Icon: Fa6.FaGears,
+            title: `Automation`,
+            description: `Smart contracts minimize human interaction and third-party verification.It enables you to automate transactions, increasing efficiency and speed.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaMobileAlt,
+            title: `Instant Traceability`,
+            description: `Blockchain creates an audit trail for an asset's entire journey. Traceability data can reveal supply chain problems, such as products sitting on a loading dock awaiting transit.`
+          },
+          {
+            Icon: Io5.IoBarcode,
+            title: `Increased Efficiency`,
+            description: `Traditional paper-heavy processes are time-consuming, error-prone, and involve third-party mediation. By using blockchain, transactions can be done more quickly.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'internet-of-things',
+    heading: `Supercharge Your Digital Transformation`,
+    description: `Monitor and analyze performance, streamline data flows, automate processes & boost customer satisfaction.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Enter A New Realm Of Connectivity`,
+        description: ``,
+        data: [
+          {
+            Icon: Io5.IoClipboardOutline,
+            title: `IOT Consultancy`,
+            description: `Our consultants devise strategies that align with all your tech needs whether you have just one part of an IoT puzzle missing or require a full-scale solution.`
+          },
+          {
+            Icon:Fa.FaChartBar,
+            title: `App Development`,
+            description: `Customized mobile and web apps that harness the power of connected devices to empower enterprises with next-generation IoT products.`
+          },
+          {
+            Icon: Fa6.FaGears,
+            title: `Extension into IoT`,
+            description: `We extend existing enterprise and consumer solutions into IoT, turning connected distributed devices and gadgets into valuable assets.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaMobileAlt,
+            title: `System Integration`,
+            description: `We extend existing enterprise and consumer solutions into IoT, turning connected distributed devices and gadgets into valuable assets.`
+          },
+          {
+            Icon: Io5.IoBarcode,
+            title: `Data Analytics`,
+            description: `Funnel out the noise and transform your unstructured IoT data into business insights that enable strategic decision-making.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'ar-vr',
+    heading: `Develop Your Experiential Ecosystem`,
+    description: `Set up your brand for success. Reach a new generation of consumers with fully customized experiences.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Enter A New Realm Of Connectivity`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaBox,
+            title: `Explore The Creative Side Of Technology`,
+            description: `We offer real-world enhancements with digital twins and visual overlays enabling countless business opportunities across all industries.`
+          },
+          {
+            Icon:Si.SiVirtualbox,
+            title: `Augmented Reality`,
+            description: `We offer real-world enhancements with digital twins and visual overlays enabling countless business opportunities across all industries.`
+          },
+          {
+            Icon: Fa6.FaPeopleCarryBox,
+            title: `Virtual Reality`,
+            description: `We provide VR solutions with gamification features for a variety of training, education, and collaboration applications.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gi.Gi3DMeeple,
+            title: `Mixed Reality`,
+            description: `We'll help you merge physical and digital environments, people, and virtual beings to create novel human-computer-environment interactions.`
+          },
+          {
+            Icon: Si.SiXdadevelopers,
+            title: `3D Modelling & Animation`,
+            description: `With 3D designs that create immersive AR/VR, our talented artists bring your concepts to life.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'healthcare',
+    heading: `Transforming The Future Of Healthcare`,
+    description: `Enabling the digital transformation journey of healthcare startups and medtech enterprises.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Enhance Your Patient Care Delivery`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaBox,
+            title: `Provide Enhanced Patient Care`,
+            description: `Our custom healthcare software development services enable patients to view their medical records anytime, anywhere.`
+          },
+          {
+            Icon:Si.SiVirtualbox,
+            title: `Reduce Operational Costs`,
+            description: `We help you digitalize your core processes and workflows to reduce inventory tracking, waste, and resource allocation.`
+          },
+          {
+            Icon: Fa6.FaPeopleCarryBox,
+            title: `Automate & Streamline Processes`,
+            description: `Custom healthcare software development allows you to automate lab testing data collecting, processing, and analysis.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gi.Gi3DMeeple,
+            title: `Safeguard Patient Information`,
+            description: `Mitigate the risk of medical data breach. We leverage blockchain technology enabling safe, decentralized data transactions.`
+          },
+          {
+            Icon: Si.SiXdadevelopers,
+            title: `Realize The Full Potential Of Your Data`,
+            description: `Our data-driven healthcare solution provides you an all-seeing eye to analyze clinical processes and patient insights.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'e-learning',
+    heading: `Intelligent Solutions For Modern Education`,
+    description: `From designing custom course content, developing intuitive learning management systems, to delivering seamless online experiences, we will help you do it all.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Develop A Complete Learning Platform`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaBox,
+            title: `Educational Games & Simulations`,
+            description: `Develop interactive and engaging software that provide learners with opportunities to learn through gameplay.`
+          },
+          {
+            Icon:Si.SiVirtualbox,
+            title: `Learning Management Systems (LMS)`,
+            description: `Create and manage online and blended learning environments.`
+          },
+          {
+            Icon: Fa6.FaPeopleCarryBox,
+            title: `Mobile Learning Apps`,
+            description: `Enable learners to access educational content and resources on their mobile devices,`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gi.Gi3DMeeple,
+            title: `Online Tutoring & Mentoring platform`,
+            description: `Create online tutoring and mentoring platform, which can provide students with access to expert help and guidance in real-time.`
+          },
+          {
+            Icon: Si.SiXdadevelopers,
+            title: `Communication & Collaboration Tools`,
+            description: `Enable communication and collaborate in real-time, regardless of location through tools like chat, video conferencing, and shared document editing tools etc.`
+          }
+        ]
+      },
+
+    ]
+  },
+  {
+    page: 'robotic-process-automation',
+    heading: `Automate. Accelerate. Achieve.`,
+    description: `Streamline your business processes, eliminate errors & reduce time-intensive & repetitive tasks.`,
+    cardsData: [
+      {
+        bg: true,
+        heading: `Enhance Your Business Value With Intelligent Automation`,
+        description: ``,
+        data: [
+          {
+            Icon: Fa.FaBox,
+            title: `Upscale Without Barriers`,
+            description: `We'll analyze and automate the right processes (based on expected ROI). Build PoCs, automation roadmaps, and RPA bots so you can focus on your core business.`
+          },
+          {
+            Icon:Si.SiVirtualbox,
+            title: `Speed Up Operations`,
+            description: `Redirect mind-numbing, repetitive duties to high-value functions. We ensure data accuracy and consistency to speed up your operations.`
+          },
+          {
+            Icon: Fa6.FaPeopleCarryBox,
+            title: `Improve ROI`,
+            description: `By taking a strategic, holistic approach to cloud automation, tkxel helps businesses build a strong business case, increase revenue, and gain a competitive edge.`
+          },
+        ]
+      },
+      {
+        bg: false,
+        heading: `Implementation Services`,
+        description: ``,
+        data: [
+          {
+            Icon: Gi.Gi3DMeeple,
+            title: `Optimize Processes`,
+            description: `tkxel offers numerous process optimization solutions. From process re-engineering to no code/low code solutions, we will help you fast-track your business transformation.`
+          },
+          {
+            Icon: Si.SiXdadevelopers,
+            title: `Ready to get started?`,
+            description: `Streamline your business processes with Robotic Process Automation.`
+          }
+        ]
+      },
+
+    ]
+  },
 ]

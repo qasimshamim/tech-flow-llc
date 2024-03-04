@@ -17,8 +17,9 @@ interface Pros {
 
 const Jobs = ({ params: { slug } }: Pros) => {
 
-    const data = Pages.serviceDetailCard.filter(p => p.page == slug)
+    const paths = Con.serviceCards.flatMap(card => (card.services.map(service => service.url))); 
 
+    const data = Pages.serviceDetailCard.filter(p => p.page == slug) 
 
 
     return (
@@ -27,7 +28,9 @@ const Jobs = ({ params: { slug } }: Pros) => {
             text="enterprises growth companies startups"
             url="#contact-form" btn={'tell us about your project'} poster="/banner-1.webp" />
 
-            {data.length > 0 && data.map((v, i) => <C.ServiceDetailInfo key={i} data={v} />)}
+          {
+            paths.includes(slug) && data.length > 0 && data.map((v, i) => <C.ServiceDetailInfo key={i} data={v} />)
+          }
 
 
 

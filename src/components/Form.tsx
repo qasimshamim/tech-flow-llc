@@ -1,14 +1,16 @@
-"use client" 
+"use client"
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
-import { formValidation, formInputs, formInfo } from '@/constants/index' 
+import { formValidation, formInputs, formInfo } from '@/constants/index'
 import { Button } from './ui/button';
 import { FormValues } from '@/types/index'
 import Image from 'next/image';
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
 
-
+  const [isLoading, setIsLoading] = useState(false);
 
   const { handleChange, handleSubmit, handleBlur, touched, errors, values, } = useFormik({
     initialValues: {
@@ -20,10 +22,16 @@ const Form = () => {
     },
     validationSchema: Yup.object(formValidation),
     onSubmit: async (formValues) => {
+
+      setIsLoading(true);
+      setTimeout(() => {
+
+        setIsLoading(false)
+        toast.success('Successfully Submit!');
+      }, 1600);
       console.log(formValues);
     },
   });
-
   return <section className=' sm:pb-20' id='contact-form'>
 
     <div className="container mx-auto px-4 flex flex-wrap items-center">
@@ -34,7 +42,7 @@ const Form = () => {
         <form onSubmit={handleSubmit} className='flex gap-6 flex-wrap justify-between'>
 
           {formInputs.map((v, i) => <div key={i} className={`h-18 flex flex-col gap-1 w-full ${v.name === 'message' ? 'w-full' : 'md:w-[48%]'}`}>
-           
+
             <v.field
               placeholder={v.label}
               type={v.type}
@@ -44,14 +52,14 @@ const Form = () => {
               onChange={handleChange}
               value={values[v.name as keyof FormValues]}
               className={`bg-white w-full`}
-              />
+            />
             {touched[v.name as keyof FormValues] && errors[v.name as keyof FormValues] && (
               <div className="text-red-500 text-xs">{errors[v.name as keyof FormValues]}</div>
             )}
           </div>)}
 
-          <Button type='submit' disabled={false} className={`bg-Tblue hover:bg-TDarkBlue w-full`}>
-            {true ? 'Send' : 'Sending'}
+          <Button type='submit' disabled={isLoading} className={`bg-Tblue hover:bg-TDarkBlue w-full`}>
+            {isLoading ? 'Sending' : 'Send'}
           </Button>
         </form>
       </div>
@@ -72,7 +80,7 @@ const Form = () => {
       </div>
 
     </div>
-
+    <Toaster />
   </section>
 
 }

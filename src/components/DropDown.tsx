@@ -23,7 +23,8 @@ const DropDown = () => {
 
 
                     <ul className="flex flex-wrap gap-6 items-center justify-between">
-                        {v.services.length > 0 && v.services.map((v, index) => (<li key={index} className="cursor-pointer capitalize w-full text-gray-800 transition-all duration-300 hover:text-Tblue">
+                        {v.services.length > 0 && v.services.map((v, index) => (<li key={index}
+                         className={`${path.includes(v.url) ? 'text-Tblue' : 'text-gray-800'}  cursor-pointer capitalize w-full transition-all duration-300 hover:text-Tblue`}>
                             <Link href={path.includes('service') ? v.url : `service/${v.url}`}>{v.title}</Link>
                         </li>))}
                     </ul>

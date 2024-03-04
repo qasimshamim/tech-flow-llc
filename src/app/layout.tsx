@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { companyName } from '@/constants/index' 
 import * as Com from '@/components/index'
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin","greek"] });
 
 export const metadata: Metadata = {
   title: companyName,
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} scroll-smooth`}>
+      <body className={`scroll-smooth`}>
         <Com.Header />
         {children}
         <Com.SuccessSnippets />

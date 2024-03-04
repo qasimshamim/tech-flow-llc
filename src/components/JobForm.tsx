@@ -5,11 +5,12 @@ import { careerFormValidation, careerFormInputs } from '@/constants/index';
 import { CareerFormValues } from '@/types/index';
 import { Button } from './ui/button';
 import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const JobForm = () => {
     const [isLoading, setIsLoading] = useState(false); 
 
-    const { handleChange, handleSubmit, handleBlur, touched, errors, values } = useFormik({
+    const { handleChange, handleSubmit, handleBlur, touched, errors, values,handleReset } = useFormik({
         initialValues: {
             fullName: "",
             email: "",
@@ -18,10 +19,13 @@ const JobForm = () => {
         },
         validationSchema: Yup.object(careerFormValidation),
         onSubmit: async (formValues) => {
-            setIsLoading(true);
+            
+            setIsLoading(true); 
             setTimeout(() => {
-                setIsLoading(false);
-            }, 1000);
+                
+                setIsLoading(false)
+                toast.success('Successfully Submit!');
+            }, 1600);
             console.log(formValues);
         },
     });
@@ -29,7 +33,7 @@ const JobForm = () => {
     return (
         <section>
             <div className="container mx-auto px-4">
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+                <form onSubmit={handleSubmit} className="max-w-md mx-auto"> 
                     {careerFormInputs.map((v, i) => (
                         <div key={i} className="relative z-0 w-full mb-5 group">
                             <v.field
@@ -52,6 +56,7 @@ const JobForm = () => {
                     </Button>
                 </form>
             </div>
+            <Toaster />
         </section>
     );
 };
