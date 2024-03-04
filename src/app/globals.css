@@ -111,11 +111,4 @@ backdrop-filter: blur(15px);
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--Tblue);
-}
-
- .menu{ 
-  transform: translateX(-38%);
-  width: 90dvw !important;
-  right: 50%;  
-  height: fit-content;
- }
+}  

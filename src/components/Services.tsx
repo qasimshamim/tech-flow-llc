@@ -21,7 +21,7 @@ const Services = ({ bg, description, heading, services, btn, url = '' }: Pros) =
             <p className="text-gray-600 mt-6">{description}</p>
         </div>
         <div className="flex items-center justify-center gap-6 flex-wrap md:w-[45%] w-full h-fit">
-            {services.length > 0 && services.map((v, i) => <Link key={i} href={v.url}
+            {services.length > 0 && services.map((v, i) => <Link key={i} href={'service/'+v.url}
                 className="border border-gray-200 rounded-md flex items-center justify-between px-3 py-6 w-[17.4rem] duration-300 transition-all group hover:-translate-y-5 hover:border-Tblue hover:shadow-md shadow-Tblue gap-4">
                 <div className="group-hover:text-Tblue duration-300 transition-all text-2xl"><v.Icon /></div><h1 className="uppercase duration-300 transition-all group-hover:text-Tblue text-xs ">{v.title}</h1> <span className="group-hover:text-Tblue duration-300 transition-all"><FaLongArrowAltRight /></span>
             </Link>)}

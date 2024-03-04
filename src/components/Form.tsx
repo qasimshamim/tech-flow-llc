@@ -24,12 +24,12 @@ const Form = () => {
     },
   });
 
-  return <section className='pb-20' id='contact-form'>
+  return <section className=' sm:pb-20' id='contact-form'>
 
     <div className="container mx-auto px-4 flex flex-wrap items-center">
 
-      <div className='bg-gray-100 border-gray-200 border-1 p-16 rounded-lg flex flex-col w-full gap-10 md:w-[60rem]'>
-        <h1 className='font-semibold text-3xl capitalize'>ready to get started?</h1>
+      <div className='bg-gray-100 border-gray-200 border-1 sm:p-16 p-8 rounded-lg flex flex-col w-full gap-10 md:w-[60rem]'>
+        <h1 className='font-semibold sm:text-3xl text-xl capitalize'>ready to get started?</h1>
 
         <form onSubmit={handleSubmit} className='flex gap-6 flex-wrap justify-between'>
 
@@ -59,7 +59,7 @@ const Form = () => {
       <div className='p-10 md:flex-1 w-full relative'>
         <div className='flex gap-3 w-fit h-fit justify-center pt-10 border-0 border-gray-200 border-t-2 px-2 mx-auto'>
           <figure className='rounded-full w-fit h-fit overflow-hidden'>
-            <Image src={formInfo.image} width={50} height={50} alt={formInfo.title} />
+            <Image src={formInfo.image} width={60} height={60} alt={formInfo.title} />
           </figure>
           <div className='capitalize'>
             <figcaption className='font-semibold'>{formInfo.title}</figcaption>

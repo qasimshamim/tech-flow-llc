@@ -1,5 +1,5 @@
 import * as C from "@/components/index"
-import { homePartnership, homePartnership2 ,serviceCards} from "@/constants/index"
+import { homePartnership, homePartnership2, serviceCards } from "@/constants/index"
 
 const HomePage = () => <><C.Hero
   heading="Architects of Tomorrow's Digital Frontier"
@@ -37,9 +37,6 @@ const HomePage = () => <><C.Hero
     image={homePartnership2.image}
     className={'flex-row-reverse'}
     url={homePartnership2.url}
-    btn={homePartnership2.btn} />
-
-
-</>
+    btn={homePartnership2.btn} /></>
 
 export default HomePage

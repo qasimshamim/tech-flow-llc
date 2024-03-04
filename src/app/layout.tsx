@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { companyName } from '@/constants/index'
+import { companyName } from '@/constants/index' 
 import * as Com from '@/components/index'
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,18 +18,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: Readonly<{  
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} scroll-smooth`}>
         <Com.Header />
         {children}
         <Com.SuccessSnippets />
         <Com.Form />
         <Com.Accordion />
-        <Com.Footer />
+        <Com.Footer /> 
       </body>
     </html>
   );

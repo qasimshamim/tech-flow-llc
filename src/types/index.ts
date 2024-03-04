@@ -46,6 +46,15 @@ export interface FormValues {
 }
 
 
+
+export interface CareerFormValues {
+    fullName: string;
+    email: string;
+    phone: string;
+    cv: any;
+}
+
+
 export interface FormInfo {
     image: string;
     title: string;
@@ -141,8 +150,33 @@ export interface Faq {
 
 
 
-export interface MegaMenu {
-    heading: string;
-    list: MenuItem[]
+export interface ContactInfo {
+    map: string;
+    img: string;
+    email: SocialLinks;
+    query: SocialLinks;
+    career: SocialLinks;
+    address: SocialLinks;
+    number: {
+        Icon: IconType;
+        url: number;
+    };
 }
 
+export interface CardsData {
+    bg: boolean;
+    heading: string;
+    description: string;
+    data: {
+        Icon: IconType;
+        title: string;
+        description: string;
+    }[];
+}
+
+export interface ServiceDetailCard {
+    page: string;
+    heading: string;
+    description: string;
+    cardsData: CardsData[];
+}

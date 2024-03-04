@@ -1,7 +1,7 @@
 
 
 
-const loading = () => <body className="fixed overflow-hidden bg-white inset-0 z-[9999999] flex items-center justify-center text-6xl font-bold">
+const loading = () => <section className="fixed overflow-hidden bg-white inset-0 z-[9999999] flex items-center justify-center text-6xl font-bold">
 
             <div role="status">
                 <svg
@@ -24,7 +24,7 @@ const loading = () => <body className="fixed overflow-hidden bg-white inset-0 z-
             </div>
 
 
-        </body>
+        </section>
    
 
 export default loading

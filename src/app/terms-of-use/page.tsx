@@ -2,7 +2,7 @@ import { Hero } from "@/components/index"
 import { companyName } from "@/constants"
 
 
-const TermOfUse = () => <><Hero text="enterprises growth companies startups" url="/contact-us" btn={'tell us about your project'} heading="terms of use" poster="/banner-1.webp" /> <section className="container mx-auto px-4 pt-20">
+const TermOfUse = () => <><Hero text="enterprises growth companies startups" url="#contact-form" btn={'tell us about your project'} heading="terms of use" poster="/banner-1.webp" /> <section className="container mx-auto px-4 pt-20">
   <h1 className="text-Tblue md:text-6xl text-2xl font-bold mb-2">Terms of Use</h1>
   <p>
     These Terms of Use are a legally binding agreement between you and Tkxel LLC

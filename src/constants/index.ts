@@ -12,12 +12,12 @@ import {
 import { FaXTwitter, FaBattleNet, FaQuoteLeft, FaLightbulb, FaMobileScreenButton, FaUserGroup, FaServicestack } from "react-icons/fa6";
 import { LuPenTool } from "react-icons/lu";
 import { BsPersonFillGear, BsClipboard2Data } from "react-icons/bs";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoDocumentTextOutline, IoPhonePortraitOutline } from "react-icons/io5";
 import { GiBigGear, GiVrHeadset, GiGiftOfKnowledge } from "react-icons/gi";
-import { SiMulesoft, SiBlockchaindotcom, SiInternetcomputer, SiSinglestore, SiCyberdefenders, SiBugcrowd, SiMixcloud, SiPowerbi } from "react-icons/si";
+import { SiMulesoft, SiBlockchaindotcom, SiInternetcomputer, SiSinglestore, SiCyberdefenders, SiBugcrowd, SiMixcloud, SiPowerbi, SiJquery } from "react-icons/si";
 import { CgWebsite } from "react-icons/cg";
 import { GrIntegration } from "react-icons/gr";
-import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { MdOutlineHealthAndSafety, MdOutlineMail, MdOutlineWorkOutline, MdOutlineLocationOn } from "react-icons/md";
 
 
 
@@ -50,9 +50,7 @@ export const formValidation: T.FormValidation = {
     .min(2, "Full name must be at least 2 characters")
     .max(50, "Full name cannot exceed 50 characters"),
   email: Yup.string().required("Email is Required").email("Invalid email address"),
-  phone: Yup.string()
-    .matches(/^\+0 \(\d{3}\) \d{3}-\d{2}-\d{2}$/, 'Invalid phone number')
-    .required('Phone number is required'),
+  phone: Yup.string().required('Phone number is required'),
   organization: Yup.string().required("Organization is Required").min(3, "Message must be at least 3 characters").max(200, "Message cannot exceed 200 characters"),
   message: Yup.string().required("Message is Required").min(10, "Message must be at least 10 characters").max(200, "Message cannot exceed 200 characters"),
 };
@@ -65,6 +63,25 @@ export const formInputs: T.FormInputs[] = [
   { label: 'Your Organization', type: 'text', name: 'organization', field: Input },
   { label: 'Your message...', type: '', name: 'message', field: Textarea },
 ]
+
+
+export const careerFormValidation: T.FormValidation = {
+  fullName: Yup.string().required("Full name is Required").min(2, "Full name must be at least 2 characters")
+  .max(50, "Full name cannot exceed 50 characters"),
+  email: Yup.string().required("Email is Required").email("Invalid email address"),
+  phone: Yup.string().required('Phone number is required'),  
+  cv:Yup.string().required('C.V is required'),  
+};
+
+
+export const careerFormInputs: T.FormInputs[] = [
+  { label: 'Your Name', type: 'text', name: 'fullName', field: Input },
+  { label: 'Your Email', type: 'email', name: 'email', field: Input },
+  { label: 'Your Number', type: 'tel', name: 'phone', field: Input },  
+  { label: 'Your CV', type: 'file', name: 'cv', field: Input }, 
+]
+
+
 
 
 export const formInfo: T.FormInfo = {
@@ -104,37 +121,37 @@ export const jobsCard: T.JobsCard[] = [
     heading: 'Artificial Intelligence',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/careers/artificial-intelligence'
+    url: 'artificial-intelligence'
   },
   {
     heading: 'Internet of Things (IoT)',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/careers/internet-of-things'
+    url: 'internet-of-things'
   },
   {
     heading: 'Data & Analytics',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/careers/data-analytics'
+    url: 'data-analytics'
   },
   {
     heading: 'Blockchain',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/careers/blockchain'
+    url: 'blockchain'
   },
   {
     heading: 'Application Security Services',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/careers/application-security-services'
+    url: 'application-security-services'
   },
   {
     heading: 'System Integration',
     Icon: FaArrowRight,
     location: 'new york,us',
-    url: '/careers/system-integration'
+    url: 'system-integration'
   },
 ]
 
@@ -322,37 +339,37 @@ export const serviceCards: T.ServiceCards[] = [
       {
         Icon: FaSearchengin,
         title: 'q/a testing',
-        url: '/some'
+        url: 'qa-testing'
       },
       {
         Icon: LuPenTool,
         title: 'ui/ux design',
-        url: '/some'
+        url: 'ui-ux-design'
       },
       {
         Icon: SiInternetcomputer,
         title: 'dev ops',
-        url: '/some'
+        url: 'dev-ops'
       },
       {
         Icon: FaMobileScreenButton,
         title: 'mobile development',
-        url: '/some'
+        url: 'mobile-development'
       },
       {
         Icon: CgWebsite,
         title: 'custom software development',
-        url: '/some'
+        url: 'custom-software-development'
       },
       {
         Icon: SiInternetcomputer,
         title: 'embedded software development',
-        url: '/some'
+        url: 'embedded-software-development'
       },
       {
         Icon: GrIntegration,
         title: 'web app development',
-        url: '/some'
+        url: 'web-app-development'
       },
     ]
   },
@@ -364,22 +381,22 @@ export const serviceCards: T.ServiceCards[] = [
       {
         Icon: FaUserGroup,
         title: 'discovery workshop',
-        url: '/some'
+        url: 'discovery-workshop'
       },
       {
         Icon: IoDocumentTextOutline,
         title: 'product strategy',
-        url: '/some'
+        url: 'product-strategy'
       },
       {
         Icon: BsPersonFillGear,
         title: 'process consulting',
-        url: '/some'
+        url: 'process-consulting'
       },
       {
         Icon: GiBigGear,
         title: 'poc',
-        url: '/some'
+        url: 'poc'
       },
     ]
   },
@@ -391,47 +408,47 @@ export const serviceCards: T.ServiceCards[] = [
       {
         Icon: FaSalesforce,
         title: 'salesforce',
-        url: '/some'
+        url: 'salesforce'
       },
       {
         Icon: FaServicestack,
         title: 'services now',
-        url: '/some'
+        url: 'services-now'
       },
       {
         Icon: SiMulesoft,
         title: 'mulesoft',
-        url: '/some'
+        url: 'mulesoft'
       },
       {
         Icon: FaAws,
         title: 'aws',
-        url: '/some'
+        url: 'aws'
       },
       {
         Icon: SiCyberdefenders,
         title: 'cyber security',
-        url: '/some'
+        url: 'cyber-security'
       },
       {
         Icon: SiBugcrowd,
         title: 'bpo',
-        url: '/some'
+        url: 'bpo'
       },
       {
         Icon: SiMixcloud,
         title: 'cloud migration',
-        url: '/some'
+        url: 'cloud-migration'
       },
       {
         Icon: FaShopify,
         title: 'shopify',
-        url: '/some'
+        url: 'shopify'
       },
       {
         Icon: SiPowerbi,
         title: 'power bi',
-        url: '/some'
+        url: 'power-bi'
       },
     ]
   },
@@ -443,39 +460,39 @@ export const serviceCards: T.ServiceCards[] = [
       {
         Icon: BsClipboard2Data,
         title: 'data science & ai',
-        url: '/some'
+        url: 'data-science-ai'
       },
       {
         Icon: SiBlockchaindotcom,
         title: 'blockchain',
-        url: '/some'
+        url: 'blockchain'
       },
       {
         Icon: SiSinglestore,
         title: 'internet of things',
-        url: '/some'
+        url: 'internet-of-things'
       },
       {
         Icon: GiVrHeadset,
         title: 'ar/vr',
-        url: '/some'
+        url: 'ar-vr'
       },
 
 
       {
         Icon: MdOutlineHealthAndSafety,
         title: 'healthcare',
-        url: '/some'
+        url: 'healthcare'
       },
       {
         Icon: GiGiftOfKnowledge,
         title: 'e-learning',
-        url: '/some'
+        url: 'e-learning'
       },
       {
         Icon: FaRobot,
         title: 'robotic process automation',
-        url: '/some'
+        url: 'robotic-process-automation'
       },
     ]
   },
@@ -547,83 +564,32 @@ export const jobFormValidation: T.FormValidation = {
   phone: Yup.string().required('Phone number is required'),
 };
 
-export const mengaMenu: T.MegaMenu[] = [
-  {
-    heading: 'product engineering',
-    list: [
-      {
-        title: 'Application Re-Engineering ',
-        link: ''
-      },
-      {
-        title: 'Custom Software Development ',
-        link: ''
-      },
-      {
-        title: ' Web App Development ',
-        link: ''
-      },
-      {
-        title: ' Mobile App Development ',
-        link: ''
-      },
-      {
-        title: 'DevOps',
-        link: ''
-      }
-    ]
-  },
-  {
-    heading: 'opitimization',
-    list: [
-      {
-        title: 'Quality Assurance',
-        link: ''
-      }
-    ]
-  },
-  {
-    heading: 'cloud services',
-    list: [
-      {
-        title: 'Cloud Migration',
-        link: ''
-      },
-      {
-        title: 'Cloud Engineering',
-        link: ''
-      }
-    ]
-  },
-  {
-    heading: 'solution',
-    list: [
-      {
-        title: 'Salesforce',
-        link: ''
-      },
-      {
-        title: 'ServiceNow',
-        link: ''
-      },
-      {
-        title: 'Mulesoft ',
-        link: ''
-      },
-      {
-        title: 'AWS ',
-        link: ''
-      },
-      {
-        title: 'Shopify ',
-        link: ''
-      },
-      {
-        title: 'Power BI',
-        link: ''
-      }
-    ]
-  },
 
-]
- 
+
+
+export const contactInfo: T.ContactInfo = {
+  map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.3806981299067!2d-96.75231972424571!3d32.99373727287896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c22075fa8a2b1%3A0x554644fe60946337!2s3000%20Northside%20Blvd%20%231440%2C%20Richardson%2C%20TX%2075080%2C%20USA!5e0!3m2!1sen!2s!4v1709130406979!5m2!1sen!2s',
+  img: '/contact.png',
+  email: {
+    url: 'info@tekcoflow.com',
+    Icon: MdOutlineMail
+  },
+  query: {
+    url: 'queries@tekcoflow.com',
+    Icon: SiJquery
+  },
+  career: {
+    url: 'careers@tekcoflow.com',
+    Icon: MdOutlineWorkOutline
+  },
+  address: {
+    url: '3000 northside blvd, appartment 1440, richardson, texas 75080, us',
+    Icon: MdOutlineLocationOn
+  },
+  number: {
+    url: 6176584171,
+    Icon: IoPhonePortraitOutline
+  }
+}
+
+

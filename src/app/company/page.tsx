@@ -3,7 +3,7 @@ import * as con from '@/constants/index'
 
 const company = () => <><C.Hero
   text="enterprises growth companies startups"
-  url="/contact-us"
+  url="#contact-form"
   btn={'tell us about your project'}
   heading="Transforming Ideas into Reality with Tech FlowLLC"
   poster="/banner-1.webp" />

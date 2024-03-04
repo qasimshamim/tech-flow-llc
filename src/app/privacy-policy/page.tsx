@@ -2,7 +2,7 @@ import { Hero } from "@/components/index"
 import { companyName } from "@/constants"
 
 
-const PrivacyPolicy = () => <><Hero text="enterprises growth companies startups" url="/contact-us" btn={'tell us about your project'} heading="privacy policy" poster="/banner-1.webp" />  <section className="container mx-auto px-4 pt-20">
+const PrivacyPolicy = () => <><Hero text="enterprises growth companies startups" url="#contact-form" btn={'tell us about your project'} heading="privacy policy" poster="/banner-1.webp" />  <section className="container mx-auto px-4 pt-20">
     <h1 className="text-Tblue md:text-6xl text-2xl font-bold mb-2">Privacy Policy</h1>
     <p>
         In accordance with the U.S. Data Protection Laws and GDPR version 1.1, we at

@@ -8,7 +8,7 @@ const Jobs = () => {
         <div className="flex gap-4 flex-wrap items-center justify-center w-full h-fit">
 
           {jobsCard.length > 0 && jobsCard.map((v, i) => (
-            <Link href={v.url} key={i} className='block flex-1 h-52 bg-gray-100 py-14 px-8 border border-gray-300  group hover:bg-TDarkBlue transition-all duration-300'>
+            <Link href={`careers/${v.url}`} key={i} className='block flex-1 h-52 bg-gray-100 py-14 px-8 border border-gray-300  group hover:bg-TDarkBlue transition-all duration-300'>
               <div className='flex justify-between h-full w-full'>
                 <h1 className='font-bold   capitalize duration-300 transition-all group-hover:text-white'>{v.heading}</h1> <span className='text-TDarkBlue w-10 group-hover:text-TLightBlue transition-all duration-300  items-center flex justify-end 
                   '><v.Icon /></span>
