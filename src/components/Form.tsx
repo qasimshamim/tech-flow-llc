@@ -5,13 +5,13 @@ import { formValidation, formInputs, formInfo } from '@/constants/index'
 import { Button } from './ui/button';
 import { FormValues } from '@/types/index'
 import Image from 'next/image';
+import emailjs from "@emailjs/browser"
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
 
   const [isLoading, setIsLoading] = useState(false);
-
   const { handleChange, handleSubmit, handleBlur, touched, errors, values, } = useFormik({
     initialValues: {
       fullName: "",
@@ -22,15 +22,37 @@ const Form = () => {
     },
     validationSchema: Yup.object(formValidation),
     onSubmit: async (formValues) => {
-
       setIsLoading(true);
-      setTimeout(() => {
-
-        setIsLoading(false)
-        toast.success('Successfully Submit!');
-      }, 1600);
-      console.log(formValues);
+    
+      const templateParams = {
+        to_name: "tech flow team",
+        from_name: `name: ${formValues.fullName}, email: ${formValues.email} and organization: ${formValues.organization}` ,
+        message: formValues.message
+      };
+    
+      try {
+        const res = await emailjs.send(
+          "service_40npzci",
+          "template_5mmgnzk",
+          templateParams,
+          "58Ib0oY1FwvFzIlJB"
+        ); 
+        console.log(res);
+        
+        const { status } = res;
+    
+        if (status === 200) {  
+          toast.success("Your message successfully submitted");
+        } else {
+          toast.error("Failed to submit message");
+        }
+        setIsLoading(false);
+      } catch (error:any) {
+        toast.error(error.message);
+        setIsLoading(false);
+      } 
     },
+    
   });
   return <section className=' sm:pb-20' id='contact-form'>
 
