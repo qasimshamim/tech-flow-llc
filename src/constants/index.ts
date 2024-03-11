@@ -88,8 +88,8 @@ export const formInfo: T.FormInfo = {
   image: '/form-info.jpg',
   title: 'qasim shamim',
   heading: 'Business Expert Manager',
-  email: 'qasimshamim9@gmail.com',
-  phone: '571 549 8430',
+  email: 'qasim@tekcoflow.com',
+  phone: '617 658 4171',
   link: {
     Icon: FaLinkedinIn,
     url: 'https://linkedin.com/in/qasim-shamim'
@@ -315,6 +315,13 @@ export const teamCards: T.TeamCards[] = [
     linkedin: 'https://www.linkedin.com/in/muneeb-ur-rehman-929647177/'
   },
   {
+    image: '/team/5.png',
+    heading: 'Arbab Zafar',
+    tagline: 'Full Stack Web Developer',
+    description: 'Meet Arbab Zafar, our dedicated Full Stack Web Developer at Tech Flow LLC, driving strategic partnerships and fostering growth opportunities in the ever-evolving tech landscape.',
+    linkedin: 'https://www.linkedin.com/in/arbab-zafar-web-developer/'
+  },
+  {
     image: '/team/3.webp',
     heading: 'Ahmed Afzal Khan',
     tagline: 'Business Development Officer',
@@ -327,6 +334,13 @@ export const teamCards: T.TeamCards[] = [
     tagline: 'Content Manager',
     description: 'Meet Tahir Hussain, our visionary Content Manager at Tech Flow LLC, sculpting narratives that breathe life into our technological journey and connect with our audience on a deeper level.',
     linkedin: 'https://www.linkedin.com/in/tahir-hussain-5861b7211/'
+  },
+  {
+    image: '/team/6.png',
+    heading: 'Farhan Awan',
+    tagline: 'shopify developer',
+    description: 'Meet Farhan Awan, our visionary shopify developer at Tech Flow LLC, sculpting narratives that breathe life into our technological journey and connect with our audience on a deeper level.',
+    linkedin: 'https://www.linkedin.com/in/farhan-awan-shopifyexpert-web-developer/'
   },
 ]
 
