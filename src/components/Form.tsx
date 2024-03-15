@@ -32,10 +32,10 @@ const Form = () => {
     
       try {
         const res = await emailjs.send(
-          "service_40npzci",
-          "template_5mmgnzk",
+          "service_l4tn9vr",
+          "template_sbrpmb8",
           templateParams,
-          "58Ib0oY1FwvFzIlJB"
+          "nHvx1qQWN8Rleb-Jm"
         ); 
         console.log(res);
         

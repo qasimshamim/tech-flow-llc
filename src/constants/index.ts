@@ -35,7 +35,7 @@ export const navLinks: T.NavLink[] = [
 
 
 export const socialLinks: T.SocialLinks[] = [
-  { Icon: FaLinkedinIn, url: 'https://www.some.com/' },
+  { Icon: FaLinkedinIn, url: 'https://www.linkedin.com/company/tech-flowllc/' },
   { Icon: FaXTwitter, url: 'https://www.some.com/' },
   { Icon: FaFacebookF, url: 'https://www.some.com/' },
   { Icon: FaInstagram, url: 'https://www.some.com/' },
@@ -227,8 +227,8 @@ export const testimonial: T.Testimonial[] = [
 
 export const journey: T.Journey[] = [
   {
-    count: 50,
-    p: 'people onboard',
+    count: 100,
+    p: 'Employees',
     plus: true,
     Icon: FaUser
   },
@@ -245,8 +245,8 @@ export const journey: T.Journey[] = [
     Icon: FaLightbulb
   },
   {
-    count: 4.9,
-    p: 'clutch rating',
+    count:250000,
+    p: 'USD Annual Turnover',
     plus: false,
     Icon: PiClubFill
   },
@@ -313,6 +313,20 @@ export const teamCards: T.TeamCards[] = [
     tagline: 'Project Manager',
     description: 'Introducing Muneeb ur Rehman, our dedicated Project Manager at Tech Flow LLC, orchestrating seamless execution and delivery of cutting-edge tech solutions.',
     linkedin: 'https://www.linkedin.com/in/muneeb-ur-rehman-929647177/'
+  },
+  {
+    image: '/team/8.jpg',
+    heading: 'Aleem Ahmed',
+    tagline: 'Technical Projects',
+    description: 'Introducing Aleem Ahmed, our dedicated Technical Projects at Tech Flow LLC, orchestrating seamless execution and delivery of cutting-edge tech solutions.',
+    linkedin: 'https://www.linkedin.com/in/aleem-ahmed-47399268'
+  },
+  {
+    image: '/team/7.jpg',
+    heading: 'Sohail Nawaz',
+    tagline: 'Senior Full Stack Developer',
+    description: 'Meet Sohail Nawaz, our dedicated Senior Full Stack Developer at Tech Flow LLC, orchestrating seamless execution and delivery of cutting-edge tech solutions.',
+    linkedin: 'https://www.linkedin.com/in/muhammad-sohail-nawaz-4b0b40222'
   },
   {
     image: '/team/5.png',

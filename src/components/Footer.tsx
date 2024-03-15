@@ -1,6 +1,6 @@
+"use client"
 import { socialLinks, companyName } from '@/constants/index'
 import { Logo } from '@/components/index'
-import Link from 'next/link'
 import Image from 'next/image'
 
 const Footer = () => {
@@ -26,14 +26,14 @@ const Footer = () => {
 
         <div className='flex items-center justify-between flex-wrap py-10 border-0 border-gray-500 border-t-2 gap-2'>
           <p> &copy; {currentYear} {companyName} all rights reserved.</p>
-          <div className='flex flex-wrap items-center gap-4'>   
+          <div className='flex flex-wrap items-center gap-4'>
             <ul className='flex flex-wrap items-center sm:gap-4 gap-3'>
               {
                 socialLinks.length > 0 && socialLinks.map((v, i) => (
                   <li key={i} className='w-fit h-fit bg-TDarkBlue rounded-full hover:bg-Tblue duration-300 transition-all'>
-                    <Link href={v.url} className='text-xs sm:text-xl flex items-center justify-center sm:p-2 sm:h-8 h-5 sm:w-8 w-5'>
+                    <button onClick={() => window.open(v.url, "_blank")} className='text-xs sm:text-xl flex items-center justify-center sm:p-2 sm:h-8 h-5 sm:w-8 w-5'>
                       <v.Icon />
-                    </Link>
+                    </button>
                   </li>
                 ))
               }
